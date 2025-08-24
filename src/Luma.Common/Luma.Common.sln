@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36408.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luma.Common.Shared", "Luma.Common.Shared\Luma.Common.Shared.csproj", "{2A417D51-212E-40A8-906B-326C3DF84503}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luma.ServiceBus", "Luma.ServiceBus\Luma.ServiceBus.csproj", "{E8E02F8D-D917-4931-A81B-B23AC95A4731}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A417D51-212E-40A8-906B-326C3DF84503}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A417D51-212E-40A8-906B-326C3DF84503}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A417D51-212E-40A8-906B-326C3DF84503}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A417D51-212E-40A8-906B-326C3DF84503}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8E02F8D-D917-4931-A81B-B23AC95A4731}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8E02F8D-D917-4931-A81B-B23AC95A4731}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8E02F8D-D917-4931-A81B-B23AC95A4731}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8E02F8D-D917-4931-A81B-B23AC95A4731}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A9F3BCF3-1B60-4C96-B322-0F37A759AE5C}
+	EndGlobalSection
+EndGlobal
