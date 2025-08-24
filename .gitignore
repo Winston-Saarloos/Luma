@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs
+/src/Luma.Web/.next
+/src/Luma.Web/node_modules
+/src/Luma.Web/.cursorrules
