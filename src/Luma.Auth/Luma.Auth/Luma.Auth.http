@@ -1,0 +1,6 @@
+@Luma.Auth_HostAddress = http://localhost:5088
+
+GET {{Luma.Auth_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,50 @@
+﻿@page
+@model Luma.Auth.Pages.Account.LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="min-h-screen flex items-center justify-center bg-slate-950 px-4">
+    <div class="w-full max-w-md bg-slate-900 border border-slate-800 rounded-2xl shadow-xl p-8">
+        <h1 class="text-2xl font-bold text-slate-100 mb-6 text-center">Sign in to your account</h1>
+
+        <form method="post" class="space-y-5">
+            @if (!ViewData.ModelState.IsValid)
+            {
+                <div asp-validation-summary="All"
+                     class="mb-4 rounded-lg border border-red-600 bg-red-900/50 px-4 py-3 text-sm text-red-200">
+                </div>
+            }
+
+            <div>
+                <label asp-for="Input.Email" class="block text-sm font-medium text-slate-300 mb-1"></label>
+                <input asp-for="Input.Email" type="email"
+                       class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-slate-100 placeholder-slate-500
+                              focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/30 outline-none" />
+                <span asp-validation-for="Input.Email" class="text-red-400 text-sm"></span>
+            </div>
+
+            <div>
+                <label asp-for="Input.Password" class="block text-sm font-medium text-slate-300 mb-1"></label>
+                <input asp-for="Input.Password" type="password"
+                       class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-slate-100 placeholder-slate-500
+                              focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/30 outline-none" />
+                <span asp-validation-for="Input.Password" class="text-red-400 text-sm"></span>
+            </div>
+
+            <button type="submit"
+                    class="w-full rounded-lg bg-indigo-600 hover:bg-indigo-500 transition-colors px-4 py-2 font-medium text-white shadow-md">
+                Log in
+            </button>
+        </form>
+
+        <p class="mt-6 text-center text-sm text-slate-400">
+            Don’t have an account?
+            <a asp-page="/Account/Register" class="text-indigo-400 hover:text-indigo-300 font-medium">Register</a>
+        </p>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

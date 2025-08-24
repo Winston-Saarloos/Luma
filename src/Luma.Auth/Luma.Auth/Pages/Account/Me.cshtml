@@ -1,0 +1,23 @@
+﻿@page
+@model Luma.Auth.Pages.Account.MeModel
+@{
+    ViewData["Title"] = "Account";
+}
+
+<div class="min-h-screen flex items-center justify-center bg-slate-950 px-4">
+    <div class="w-full max-w-md bg-slate-900 border border-slate-800 rounded-2xl shadow-xl p-8 text-slate-100">
+        <h1 class="text-2xl font-bold mb-6 text-center">Account info</h1>
+        <dl class="space-y-2">
+            <dt class="font-semibold">Email</dt>
+            <dd>@Model.CurrentUser?.Email</dd>
+            <dt class="font-semibold">Display name</dt>
+            <dd>@Model.CurrentUser?.DisplayName</dd>
+        </dl>
+        <form method="post" asp-page-handler="Logout" class="mt-6">
+            <button type="submit"
+                    class="w-full rounded-lg bg-red-600 hover:bg-red-500 transition-colors px-4 py-2 font-medium text-white shadow-md">
+                Log out
+            </button>
+        </form>
+    </div>
+</div>

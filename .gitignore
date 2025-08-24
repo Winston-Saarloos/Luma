@@ -5,11 +5,22 @@
 # Visual Studio files
 /.vs
 /src/Luma.Common/.vs
+/src/Luma.Auth/.vs
+/src/Luma.API/.vs
 
 # Next.js files
 /src/Luma.Web/.next
 /src/Luma.Web/node_modules
 /src/Luma.Web/.cursorrules
+
+# AppSettings files (do not commit configuration files)
+**/appsettings.json
+**/appsettings.*.json
+**/appsettings.Development.json
+**/appsettings.Production.json
+**/appsettings.Staging.json
+**/appsettings.Local.json
+**/appsettings.Test.json
 
 ################################################################################
 # ASP.NET Core specific ignores for Luma.Common
@@ -367,5 +378,3 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
-/src/Luma.Common/Luma.Common/appsettings.Development.json
-/src/Luma.Common/Luma.Common/appsettings.json
